@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EFC8CDB8-2BEF-49AA-BAA7-5041101FFA8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cities</RootNamespace>
+    <AssemblyName>Cities</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs" />
+    <Compile Include="City_Mayor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="City_Mayor.Designer.cs">
+      <DependentUpon>City_Mayor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAttraction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAttraction.Designer.cs">
+      <DependentUpon>EditAttraction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditFormCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFormCity.Designer.cs">
+      <DependentUpon>EditFormCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditFormMayor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditFormMayor.Designer.cs">
+      <DependentUpon>EditFormMayor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditHouse.Designer.cs">
+      <DependentUpon>EditHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPart.Designer.cs">
+      <DependentUpon>EditPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditQZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditQZ.Designer.cs">
+      <DependentUpon>EditQZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRegion.Designer.cs">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStreet.Designer.cs">
+      <DependentUpon>EditStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KursovaDataSet.cs">
+      <DependentUpon>KursovaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KursovaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KursovaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Picture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Picture.Designer.cs">
+      <DependentUpon>Picture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request.Designer.cs">
+      <DependentUpon>Request.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="City_Mayor.resx">
+      <DependentUpon>City_Mayor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAttraction.resx">
+      <DependentUpon>EditAttraction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFormCity.resx">
+      <DependentUpon>EditFormCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditFormMayor.resx">
+      <DependentUpon>EditFormMayor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditHouse.resx">
+      <DependentUpon>EditHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPart.resx">
+      <DependentUpon>EditPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditQZ.resx">
+      <DependentUpon>EditQZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRegion.resx">
+      <DependentUpon>EditRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStreet.resx">
+      <DependentUpon>EditStreet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Picture.resx">
+      <DependentUpon>Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Request.resx">
+      <DependentUpon>Request.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="KursovaDataSet.xsc">
+      <DependentUpon>KursovaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KursovaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KursovaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KursovaDataSet.xss">
+      <DependentUpon>KursovaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1025929240.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picturepicture_15741979933266112278035_32336.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7c632743-9a05-4f4a-8056-7c99a3719dbf.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
